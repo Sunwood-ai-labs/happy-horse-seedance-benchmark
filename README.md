@@ -1,5 +1,7 @@
 # Happy Horse 1.0 vs Seedance 2.0 Benchmark
 
+[![CI](https://github.com/Sunwood-ai-labs/happy-horse-seedance-benchmark/actions/workflows/ci.yml/badge.svg)](https://github.com/Sunwood-ai-labs/happy-horse-seedance-benchmark/actions/workflows/ci.yml)
+
 ハッピーホース 1.0、シーダンス 2.0、シーダンス 2.0 Fast を同じ条件で比較するためのベンチマーク用リポジトリです。
 
 このリポジトリは、まず「比較条件を固定して記録する」ことを目的にしています。現在のプロンプトセットは、@image の女性キャラクター参照を軸にした 4コンセプト x 15秒 の比較実験です。各モデルのAPI実行部分は `src/vbench/adapters/` に追加する想定で、現時点では生成結果のメタデータをJSONとして登録し、Markdownレポートに集計できます。
