@@ -9,7 +9,9 @@
 
 English summary: this repository preserves a reproducible character-reference video benchmark for Happy Horse 1.0, Seedance 2.0, and Seedance 2.0 Fast. The current run focuses on B-movie flavored 15-second scenes where Happy Horse 1.0's rough physicality and strange live-action texture are part of the evaluation, not only defects.
 
-Pages preview: [Happy Horse 1.0 vs Seedance 2.0 Benchmark](https://sunwood-ai-labs.github.io/happy-horse-seedance-benchmark/)
+Pages preview target: [Happy Horse 1.0 vs Seedance 2.0 Benchmark](https://sunwood-ai-labs.github.io/happy-horse-seedance-benchmark/)
+
+The Pages workflow always builds and checks the static site. Deployment is skipped while this repository is private on a plan that does not support private GitHub Pages.
 
 ## 🧪 比較対象
 
