@@ -1,12 +1,15 @@
 # Happy Horse 1.0 vs Seedance 2.0 Benchmark
 
 [![CI](https://github.com/Sunwood-ai-labs/happy-horse-seedance-benchmark/actions/workflows/ci.yml/badge.svg)](https://github.com/Sunwood-ai-labs/happy-horse-seedance-benchmark/actions/workflows/ci.yml)
+[![Pages](https://github.com/Sunwood-ai-labs/happy-horse-seedance-benchmark/actions/workflows/pages.yml/badge.svg)](https://github.com/Sunwood-ai-labs/happy-horse-seedance-benchmark/actions/workflows/pages.yml)
 
 ハッピーホース 1.0、シーダンス 2.0、シーダンス 2.0 Fast を同じ条件で比較するためのベンチマーク用リポジトリです。
 
 このリポジトリは、まず「比較条件を固定して記録する」ことを目的にしています。現在のプロンプトセットは、@image の女性キャラクター参照を軸にした 4コンセプト x 15秒 の比較実験です。各モデルのAPI実行部分は `src/vbench/adapters/` に追加する想定で、現時点では生成結果のメタデータをJSONとして登録し、Markdownレポートに集計できます。
 
 English summary: this repository preserves a reproducible character-reference video benchmark for Happy Horse 1.0, Seedance 2.0, and Seedance 2.0 Fast. The current run focuses on B-movie flavored 15-second scenes where Happy Horse 1.0's rough physicality and strange live-action texture are part of the evaluation, not only defects.
+
+Pages preview: [Happy Horse 1.0 vs Seedance 2.0 Benchmark](https://sunwood-ai-labs.github.io/happy-horse-seedance-benchmark/)
 
 ## 🧪 比較対象
 
@@ -184,4 +187,6 @@ tests/         最低限の検証
 ```sh
 python3 scripts/smoke_test.py
 python3 scripts/check_readme_links.py
+python3 scripts/build_pages.py
+python3 scripts/check_pages_site.py
 ```
