@@ -6,6 +6,18 @@
     "higher_is_better": true
   },
   {
+    "id": "character_identity",
+    "display_name": "Character identity",
+    "scale": "1-5",
+    "higher_is_better": true
+  },
+  {
+    "id": "character_consistency",
+    "display_name": "Character consistency",
+    "scale": "1-5",
+    "higher_is_better": true
+  },
+  {
     "id": "temporal_consistency",
     "display_name": "Temporal consistency",
     "scale": "1-5",
@@ -26,6 +38,18 @@
   {
     "id": "text_logo_stability",
     "display_name": "Text/logo stability",
+    "scale": "1-5",
+    "higher_is_better": true
+  },
+  {
+    "id": "audio_quality",
+    "display_name": "Audio quality",
+    "scale": "1-5",
+    "higher_is_better": true
+  },
+  {
+    "id": "style_accuracy",
+    "display_name": "Style accuracy",
     "scale": "1-5",
     "higher_is_better": true
   },

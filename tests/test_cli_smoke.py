@@ -16,6 +16,8 @@ def test_prompts_have_unique_ids() -> None:
     prompts = load_json(CONFIG_DIR / "prompts.json")
     ids = [prompt["id"] for prompt in prompts]
     assert len(ids) == len(set(ids))
+    assert {prompt["duration_sec"] for prompt in prompts} == {15}
+    assert all("@image" in prompt["prompt"] for prompt in prompts)
 
 
 def test_parse_scores() -> None:

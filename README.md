@@ -2,7 +2,7 @@
 
 ハッピーホース 1.0、シーダンス 2.0、シーダンス 2.0 Fast を同じ条件で比較するためのベンチマーク用リポジトリです。
 
-このリポジトリは、まず「比較条件を固定して記録する」ことを目的にしています。各モデルのAPI実行部分は `src/vbench/adapters/` に追加する想定で、現時点では生成結果のメタデータをJSONとして登録し、Markdownレポートに集計できます。
+このリポジトリは、まず「比較条件を固定して記録する」ことを目的にしています。現在のプロンプトセットは、@image の女性キャラクター参照を軸にした 4コンセプト x 15秒 の比較実験です。各モデルのAPI実行部分は `src/vbench/adapters/` に追加する想定で、現時点では生成結果のメタデータをJSONとして登録し、Markdownレポートに集計できます。
 
 ## 比較対象
 
@@ -27,6 +27,8 @@ cd /Users/admin/Prj/happy-horse-seedance-benchmark
 ```sh
 PYTHONPATH=src python3 -m vbench prompts
 ```
+
+今回の動画受け取り手順は [docs/incoming-video-intake.md](docs/incoming-video-intake.md) にまとめています。
 
 空のベンチマーク実行ファイルを作ります。
 
@@ -61,10 +63,14 @@ PYTHONPATH=src python3 -m vbench report --run-id smoke-001
 `configs/metrics.json` に定義しています。
 
 - Prompt adherence: 指示への忠実度
+- Character identity: @image の女性キャラとして認識できるか
+- Character consistency: 15秒間の人物一貫性
 - Temporal consistency: フレーム間の一貫性
 - Motion quality: 動きの自然さ
 - Visual quality: 画質、質感、破綻の少なさ
 - Text/logo stability: 文字やロゴの安定性
+- Audio quality: 音楽、効果音、セリフ、ナレーション
+- Style accuracy: コンセプト別の様式再現性
 - Latency: 生成完了までの時間
 - Cost: 生成コスト
 

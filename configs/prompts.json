@@ -1,37 +1,70 @@
 [
   {
-    "id": "product-orbit",
-    "category": "product",
-    "duration_sec": 5,
+    "id": "vhs-convenience-horse-shadow",
+    "title": "VHS都市伝説ホラー: 深夜のコンビニに馬の影",
+    "category": "live-action-horror",
+    "duration_sec": 15,
     "aspect_ratio": "16:9",
-    "prompt": "A premium electric bicycle on a rotating studio platform, subtle reflections, camera orbit, realistic product lighting, no text."
+    "audio": true,
+    "reference_mode": "live-action reinterpretation",
+    "character_role": "late-night convenience store clerk",
+    "prompt": "Use @image as the reference for the main female character. Preserve her core identity, recognizable facial features, hairstyle, overall vibe, and key design elements. Keep the character clearly recognizable across the video. Reinterpret her as a realistic live-action version of the referenced character while preserving her identity. Maintain character consistency throughout the full 15-second clip.\n\nCreate a 15-second video in 16:9 format with audio enabled.\n\nA gritty 15-second 1990s Japanese VHS found-footage horror scene inside a small convenience store at 2:17 AM. The referenced female character from @image works as the late-night store clerk. She stands behind the counter, looking tired and uneasy. The camera feels like a fixed security camera or low-quality in-store surveillance footage. Fluorescent lights flicker, refrigerators hum, and rain can be heard outside.\n\nAround the middle of the scene, a strange horse-shaped shadow slowly moves across the snack aisle in the background, but no actual horse is visible. The female clerk notices it, freezes, and quietly whispers in Japanese: “いま……うしろ、通ったよね？” Her expression should shift from confusion to fear.\n\nAdd subtle hoofstep sounds, buzzing fluorescent lights, distant rain, analog VHS noise, and a low-budget Japanese horror atmosphere. The style should feel unsettling, slightly absurd, and very B-movie, but still believable as live-action. Keep the horse presence mysterious and mostly implied through shadow, sound, and atmosphere rather than fully showing it.",
+    "evaluation_focus": [
+      "live-action reinterpretation of the referenced character",
+      "character consistency under VHS degradation",
+      "implied horse presence through shadow and sound",
+      "Japanese whisper timing and audio atmosphere"
+    ]
   },
   {
-    "id": "character-action",
-    "category": "character",
-    "duration_sec": 5,
+    "id": "showa-tokusatsu-horse-monster",
+    "title": "昭和特撮: 馬怪獣、商店街に出現",
+    "category": "live-action-tokusatsu",
+    "duration_sec": 15,
     "aspect_ratio": "16:9",
-    "prompt": "A stylized explorer runs across a windy desert ridge at sunset, scarf and coat moving naturally, cinematic camera follow."
+    "audio": true,
+    "reference_mode": "live-action reinterpretation",
+    "character_role": "TV reporter / heroine",
+    "prompt": "Use @image as the reference for the main female character. Preserve her core identity, recognizable facial features, hairstyle, overall vibe, and key design elements. Keep the character clearly recognizable across the video. Reinterpret her as a realistic live-action version of the referenced character while preserving her identity. Maintain character consistency throughout the full 15-second clip.\n\nCreate a 15-second video in 16:9 format with audio enabled.\n\nA 15-second parody of a 1970s Japanese tokusatsu monster movie. The referenced female character from @image appears as a brave TV reporter or heroine standing in a miniature shopping street. The visual style should imitate old Showa-era practical-effects tokusatsu. A rubber-suit horse monster slowly stomps through a tiny model shopping district behind her.\n\nThe female reporter looks shocked but determined, reacting dramatically as signs wobble, toy cars shake, and small smoke puffs appear. She delivers a short line in Japanese with urgency: “たいへんです！うま怪獣が商店街に現れました！” Then a dramatic Japanese narrator shouts: “出た！謎のうま怪獣、街をゆらす！”\n\nAdd exaggerated hoof stomps, cheap heroic brass music, retro film grain, dramatic zoom-ins, colorful practical miniature effects, and slightly silly but lovable low-budget monster-movie energy. Keep the female character recognizable from @image while adapting her styling to a tokusatsu heroine / field reporter role.",
+    "evaluation_focus": [
+      "female character remains primary and recognizable",
+      "Showa-era practical-effects miniature look",
+      "rubber-suit horse monster clarity",
+      "Japanese reporter line and narrator energy"
+    ]
   },
   {
-    "id": "text-stability",
-    "category": "text",
-    "duration_sec": 5,
+    "id": "late-night-uma-talk-3000",
+    "title": "深夜通販: 馬語翻訳機 UMA-TALK 3000",
+    "category": "live-action-commercial",
+    "duration_sec": 15,
     "aspect_ratio": "16:9",
-    "prompt": "A clean storefront sign that reads SUNWOOD CAFE, rainy evening street, slow dolly-in, the text remains sharp and stable."
+    "audio": true,
+    "reference_mode": "live-action reinterpretation",
+    "character_role": "late-night TV shopping host",
+    "prompt": "Use @image as the reference for the main female character. Preserve her core identity, recognizable facial features, hairstyle, overall vibe, and key design elements. Keep the character clearly recognizable across the video. Reinterpret her as a realistic live-action version of the referenced character while preserving her identity. Maintain character consistency throughout the full 15-second clip.\n\nCreate a 15-second video in 16:9 format with audio enabled.\n\nA 15-second fake 1990s Japanese late-night TV shopping commercial. The referenced female character from @image is the cheerful host of the program. She stands in a cheap studio set under bright TV lights, smiling confidently while presenting a ridiculous gadget called “UMA-TALK 3000,” a horse-language translator.\n\nA small calm horse stands beside the table or slightly behind her. The host holds the device up to camera and says in Japanese: “これで、うまの気持ちがわかります。たぶん。” The device makes funny electronic beeping sounds. The horse gives a short cute neigh, and the host reacts with awkward but enthusiastic confidence, as if everything is going perfectly.\n\nAdd a cheesy late-night TV jingle, soft audience clap track, analog TV texture, silly product close-ups, quick cutaways, and a low-budget but strangely persuasive TV shopping atmosphere. Keep the prop design reasonably consistent and keep the female host clearly recognizable from @image.",
+    "evaluation_focus": [
+      "host recognizability and facial consistency",
+      "prop consistency for UMA-TALK 3000",
+      "Japanese line readability/sync",
+      "commercial jingle, beeps, neigh, and clap track"
+    ]
   },
   {
-    "id": "multi-subject",
-    "category": "composition",
-    "duration_sec": 5,
+    "id": "ova-ramen-delivery-robot",
+    "title": "80年代OVA予告: 馬型配達ロボ、ラーメンを守る",
+    "category": "anime-ova",
+    "duration_sec": 15,
     "aspect_ratio": "16:9",
-    "prompt": "Three glass marbles roll across a wooden desk and stop in a triangle formation, shallow depth of field, realistic physics."
-  },
-  {
-    "id": "anime-motion",
-    "category": "stylized",
-    "duration_sec": 5,
-    "aspect_ratio": "16:9",
-    "prompt": "Anime-style city rooftop at night, a young inventor opens a glowing mechanical umbrella, wind and rain motion, vibrant lighting."
+    "audio": true,
+    "reference_mode": "anime design preservation",
+    "character_role": "heroine pilot / delivery operator",
+    "prompt": "Use @image as the reference for the main female character. Preserve her core identity, recognizable facial features, hairstyle, overall vibe, and key design elements. Keep the character clearly recognizable across the video. For this scene, keep her design close to the reference image and present her in a stylized 1980s anime OVA aesthetic. Maintain character consistency throughout the full 15-second clip.\n\nCreate a 15-second video in 16:9 format with audio enabled.\n\nA 15-second fake 1980s Japanese anime OVA trailer. The referenced female character from @image is the heroine and operator of a horse-shaped delivery robot in a neon cyberpunk city at night. She appears either riding inside the robot cockpit or alongside it in dynamic trailer shots. The horse-shaped robot runs through the city carrying a steaming ramen delivery box.\n\nEnemy drones appear behind them, and the heroine urgently shouts in Japanese: “守れ、最後の一杯！” The scene should include dramatic cuts, speed lines, neon reflections, steam from the ramen, intense mechanical sound effects, and energetic synth music. A dramatic Japanese trailer narrator closes the scene with a bold heroic tone.\n\nUse bold 1980s anime line art, hand-painted cel-animation texture, exaggerated action framing, and a funny but epic B-movie anime atmosphere. Keep the heroine’s face, hair, and overall identity recognizable from @image while adapting her into an 80s anime protagonist.",
+    "evaluation_focus": [
+      "anime design preservation from @image",
+      "80s OVA line art and cel texture",
+      "horse-shaped robot and ramen delivery consistency",
+      "action pacing, synth music, and trailer narration"
+    ]
   }
 ]
