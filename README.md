@@ -1,5 +1,9 @@
 # Happy Horse 1.0 vs Seedance 2.0 Benchmark
 
+<p align="center">
+  <img src="hf-character-reference-comparison/renders/review-reflection-check/t3.jpg" alt="Happy Horse 1.0 vs Seedance 2.0 Benchmark title frame" width="100%">
+</p>
+
 [![CI](https://github.com/Sunwood-ai-labs/happy-horse-seedance-benchmark/actions/workflows/ci.yml/badge.svg)](https://github.com/Sunwood-ai-labs/happy-horse-seedance-benchmark/actions/workflows/ci.yml)
 [![Pages](https://github.com/Sunwood-ai-labs/happy-horse-seedance-benchmark/actions/workflows/pages.yml/badge.svg)](https://github.com/Sunwood-ai-labs/happy-horse-seedance-benchmark/actions/workflows/pages.yml)
 
