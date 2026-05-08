@@ -152,10 +152,8 @@ def render_index(prompts: object, models: object) -> str:
     section {{
       margin-top: 42px;
       padding: 30px;
-      border: 2px dashed rgba(191, 142, 88, .85);
-      border-radius: 18px;
+      border-top: 2px dashed rgba(191, 142, 88, .85);
       background: rgba(255, 248, 232, .9);
-      box-shadow: var(--shadow);
     }}
     h2 {{
       margin: 0 0 18px;
@@ -175,7 +173,7 @@ def render_index(prompts: object, models: object) -> str:
       min-height: 154px;
       padding: 18px;
       border: 2px solid rgba(0, 79, 89, .16);
-      border-radius: 12px;
+      border-radius: 8px;
       background: rgba(255, 255, 255, .66);
     }}
     .kicker, .model-card span {{
@@ -206,7 +204,7 @@ def render_index(prompts: object, models: object) -> str:
     figure {{
       margin: 0;
       padding: 10px;
-      border-radius: 14px;
+      border-radius: 8px;
       background: rgba(255, 255, 255, .7);
       border: 1px solid rgba(0, 79, 89, .16);
     }}
@@ -251,6 +249,7 @@ def render_index(prompts: object, models: object) -> str:
       <p class="lead">ハッピーホース1.0とシーダンス2.0とシーダンス2.0 Fastを、同じ女性キャラクター参照と4つのB級映像コンセプトで比較します。</p>
       <div class="actions">
         <a class="button" href="https://github.com/Sunwood-ai-labs/happy-horse-seedance-benchmark">GitHub</a>
+        <a class="button" href="https://github.com/Sunwood-ai-labs/happy-horse-seedance-benchmark/blob/main/README.md">README</a>
         <a class="button" href="#proof">確認フレーム</a>
       </div>
     </header>
@@ -295,6 +294,7 @@ def render_index(prompts: object, models: object) -> str:
     <section>
       <h2>成果物ポリシー</h2>
       <p>GitHub Pagesには軽量な確認フレームと概要を載せます。完成MP4と生成元動画はサイズが大きいため、Gitには含めずローカル成果物またはRelease assetとして扱います。</p>
+      <p>モデルID、プロンプト、評価軸はリポジトリ内のJSONを正とし、レポートは <code>python -m vbench report --run-id &lt;run-id&gt;</code> で再生成できる形を保ちます。</p>
     </section>
 
     <footer>Built by GitHub Actions from repository sources.</footer>

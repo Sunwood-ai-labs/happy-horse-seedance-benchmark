@@ -7,8 +7,9 @@ from urllib.parse import unquote
 
 
 ROOT = Path(__file__).resolve().parents[1]
-README = ROOT / "README.md"
+READMES = [ROOT / "README.md", ROOT / "README.ja.md"]
 LINK_RE = re.compile(r"(?<!!)\[[^\]]+\]\(([^)]+)\)")
+IMAGE_RE = re.compile(r"!\[[^\]]*\]\(([^)]+)\)")
 
 
 def is_external(target: str) -> bool:
@@ -21,19 +22,20 @@ def strip_anchor(target: str) -> str:
 
 def main() -> int:
     missing: list[str] = []
-    text = README.read_text(encoding="utf-8")
-    for raw_target in LINK_RE.findall(text):
-        target = strip_anchor(unquote(raw_target.strip()))
-        if not target or is_external(target):
-            continue
-        candidate = (ROOT / target).resolve()
-        try:
-            candidate.relative_to(ROOT)
-        except ValueError:
-            missing.append(raw_target)
-            continue
-        if not candidate.exists():
-            missing.append(raw_target)
+    for readme in READMES:
+        text = readme.read_text(encoding="utf-8")
+        for raw_target in [*LINK_RE.findall(text), *IMAGE_RE.findall(text)]:
+            target = strip_anchor(unquote(raw_target.strip()))
+            if not target or is_external(target):
+                continue
+            candidate = (ROOT / target).resolve()
+            try:
+                candidate.relative_to(ROOT)
+            except ValueError:
+                missing.append(f"{readme.name}: {raw_target}")
+                continue
+            if not candidate.exists():
+                missing.append(f"{readme.name}: {raw_target}")
 
     if missing:
         print("Missing README links:")
