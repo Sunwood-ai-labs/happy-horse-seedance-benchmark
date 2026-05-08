@@ -2,6 +2,8 @@
 
 このドキュメントは、ベンチマークプロトコル、生成動画の受け取り手順、HyperFrames比較動画の成果物ポリシーをまとめます。
 
+**言語:** 日本語 | [Switch to English](../index.md)
+
 ## 日本語
 
 - [ベンチマークプロトコル](benchmark-protocol.md)

@@ -1,5 +1,7 @@
 # ベンチマークプロトコル
 
+**言語:** 日本語 | [Switch to English](../benchmark-protocol.md)
+
 ## 目的
 
 Happy Horse 1.0、Seedance 2.0、Seedance 2.0 Fast を同じ入力条件で比較し、速度・コスト・生成品質の違いを再現可能な形で残します。

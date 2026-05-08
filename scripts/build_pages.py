@@ -136,6 +136,12 @@ def render_index(prompts: object, models: object) -> str:
       flex-wrap: wrap;
       gap: 12px;
     }}
+    .language-switch {{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+    }}
     .button {{
       display: inline-flex;
       align-items: center;
@@ -148,6 +154,11 @@ def render_index(prompts: object, models: object) -> str:
       text-decoration: none;
       font-weight: 800;
       box-shadow: var(--shadow);
+    }}
+    .button.secondary {{
+      background: rgba(255, 248, 232, .92);
+      color: var(--teal);
+      border: 2px solid rgba(0, 79, 89, .22);
     }}
     .text-link {{
       color: var(--teal);
@@ -251,6 +262,10 @@ def render_index(prompts: object, models: object) -> str:
       <div class="label">Character Reference Video Benchmark</div>
       <h1>Happy Horse 1.0 vs Seedance 2.0 Benchmark</h1>
       <p class="lead">ハッピーホース1.0とシーダンス2.0とシーダンス2.0 Fastを、同じ女性キャラクター参照と4つのB級映像コンセプトで比較します。</p>
+      <nav class="language-switch" aria-label="Language switch">
+        <a class="button secondary" href="https://github.com/Sunwood-ai-labs/happy-horse-seedance-benchmark/blob/main/README.md">English</a>
+        <a class="button secondary" href="https://github.com/Sunwood-ai-labs/happy-horse-seedance-benchmark/blob/main/README.ja.md">日本語</a>
+      </nav>
       <div class="actions">
         <a class="button" href="https://github.com/Sunwood-ai-labs/happy-horse-seedance-benchmark">GitHub</a>
         <a class="button" href="https://github.com/Sunwood-ai-labs/happy-horse-seedance-benchmark/blob/main/README.md">README</a>
@@ -275,7 +290,10 @@ def render_index(prompts: object, models: object) -> str:
 
     <section>
       <h2>Documentation</h2>
-      <p>English and Japanese docs are maintained in parallel: <a class="text-link" href="https://github.com/Sunwood-ai-labs/happy-horse-seedance-benchmark/blob/main/docs/index.md">English docs</a> / <a class="text-link" href="https://github.com/Sunwood-ai-labs/happy-horse-seedance-benchmark/blob/main/docs/ja/index.md">日本語ドキュメント</a>.</p>
+      <div class="language-switch">
+        <a class="button secondary" href="https://github.com/Sunwood-ai-labs/happy-horse-seedance-benchmark/blob/main/docs/index.md">English docs</a>
+        <a class="button secondary" href="https://github.com/Sunwood-ai-labs/happy-horse-seedance-benchmark/blob/main/docs/ja/index.md">日本語ドキュメント</a>
+      </div>
       <p>Protocol, intake, and HyperFrames artifact policy pages are available for both languages.</p>
     </section>
 

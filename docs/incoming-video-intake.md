@@ -1,5 +1,7 @@
 # Incoming Video Intake
 
+**Language:** English | [日本語へ切り替え](ja/incoming-video-intake.md)
+
 Place completed videos under the same `run-id`, grouped by model and prompt.
 
 ## Recommended Run

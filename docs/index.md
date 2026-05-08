@@ -2,6 +2,8 @@
 
 This documentation describes the benchmark protocol, incoming video intake, and HyperFrames comparison artifact policy.
 
+**Language:** English | [日本語へ切り替え](ja/index.md)
+
 ## English
 
 - [Benchmark Protocol](benchmark-protocol.md)

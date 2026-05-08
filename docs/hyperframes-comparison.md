@@ -1,5 +1,7 @@
 # HyperFrames Comparison Artifacts
 
+**Language:** English | [日本語へ切り替え](ja/hyperframes-comparison.md)
+
 This document defines how to handle HyperFrames artifacts for the 4-scene x 3-model comparison video.
 
 ## Tracked

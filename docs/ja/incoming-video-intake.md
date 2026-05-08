@@ -1,5 +1,7 @@
 # 動画受け取り手順
 
+**言語:** 日本語 | [Switch to English](../incoming-video-intake.md)
+
 生成が終わった動画は、同じ `run-id` の下にモデル別・プロンプト別で置きます。
 
 ## 推奨run

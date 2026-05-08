@@ -1,5 +1,7 @@
 # Benchmark Protocol
 
+**Language:** English | [日本語へ切り替え](ja/benchmark-protocol.md)
+
 ## Goal
 
 Compare Happy Horse 1.0, Seedance 2.0, and Seedance 2.0 Fast under the same input conditions, then preserve speed, cost, and output-quality differences in a reproducible format.

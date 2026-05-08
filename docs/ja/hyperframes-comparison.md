@@ -1,5 +1,7 @@
 # HyperFrames成果物
 
+**言語:** 日本語 | [Switch to English](../hyperframes-comparison.md)
+
 このドキュメントは、4シーン x 3モデルの比較動画を作るための HyperFrames 成果物の扱いをまとめます。
 
 ## Gitに残すもの

@@ -9,7 +9,9 @@
 </p>
 
 <p align="center">
-  <a href="README.ja.md">日本語</a> | <strong>English</strong>
+  <strong>English</strong>
+  ·
+  <a href="README.ja.md"><img src="https://img.shields.io/badge/Language-日本語-cc3434?style=for-the-badge" alt="Switch to Japanese"></a>
 </p>
 
 <p align="center">
