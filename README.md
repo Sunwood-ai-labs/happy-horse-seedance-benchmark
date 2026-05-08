@@ -141,6 +141,14 @@ Metrics are defined in [configs/metrics.json](configs/metrics.json).
 - Latency
 - Cost
 
+## 📚 Documentation
+
+- [Documentation home](docs/index.md)
+- [Benchmark Protocol](docs/benchmark-protocol.md)
+- [Incoming Video Intake](docs/incoming-video-intake.md)
+- [HyperFrames Comparison Artifacts](docs/hyperframes-comparison.md)
+- [日本語ドキュメント](docs/ja/index.md)
+
 ## 🗂️ Repository Layout
 
 ```text

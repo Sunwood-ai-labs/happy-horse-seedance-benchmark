@@ -1,13 +1,13 @@
 # Incoming Video Intake
 
-生成が終わった動画は、同じ `run-id` の下にモデル別・プロンプト別で置きます。
+Place completed videos under the same `run-id`, grouped by model and prompt.
 
 ## Recommended Run
 
 ```sh
 RUN_ID=character-reference-15s-001
 mkdir -p artifacts/$RUN_ID/{happy-horse-1.0,seedance-2.0,seedance-2.0-fast}
-PYTHONPATH=src python3 -m vbench init-run --run-id $RUN_ID
+uv run python -m vbench init-run --run-id $RUN_ID
 ```
 
 ## File Naming
@@ -27,10 +27,10 @@ artifacts/character-reference-15s-001/
 
 ## Register Results
 
-登録時は、少なくとも `--artifact` と `--notes` を入れます。秒数やコストが分かる場合は `--latency-sec` / `--cost-usd` も追加します。
+When registering a result, include at least `--artifact` and `--notes`. Add `--latency-sec` and `--cost-usd` when generation time or cost is known.
 
 ```sh
-PYTHONPATH=src python3 -m vbench add-result \
+uv run python -m vbench add-result \
   --run-id character-reference-15s-001 \
   --prompt-id vhs-convenience-horse-shadow \
   --model-id seedance-2.0-fast \
@@ -44,20 +44,20 @@ PYTHONPATH=src python3 -m vbench add-result \
 
 ## Scoring Checklist
 
-各動画は 1 から 5 で採点します。
+Score each video from 1 to 5.
 
-- `character_identity`: @image の女性キャラとして認識できるか
-- `character_consistency`: 15秒間で顔・髪型・雰囲気が保たれるか
-- `prompt_adherence`: 指示された場面・役割・演出を満たすか
-- `motion_quality`: 動きの自然さ、カメラ、アクション
-- `visual_quality`: 画質、質感、破綻の少なさ
-- `audio_quality`: 効果音、音楽、セリフ、ナレーション
-- `style_accuracy`: VHS、昭和特撮、深夜通販、80年代OVAの再現性
+- `character_identity`: whether the output is recognizable as the referenced female character from `@image`
+- `character_consistency`: whether face, hair, and overall vibe stay stable for 15 seconds
+- `prompt_adherence`: whether the requested scene, role, and direction are satisfied
+- `motion_quality`: movement, camera behavior, and action quality
+- `visual_quality`: image quality, texture, and absence of distracting artifacts
+- `audio_quality`: sound effects, music, dialogue, and narration
+- `style_accuracy`: fidelity to VHS horror, Showa tokusatsu, late-night shopping TV, or 80s OVA style
 
 ## Generate Report
 
 ```sh
-PYTHONPATH=src python3 -m vbench report --run-id character-reference-15s-001
+uv run python -m vbench report --run-id character-reference-15s-001
 ```
 
-レポートは `reports/character-reference-15s-001.md` に出ます。
+The report is written to `reports/character-reference-15s-001.md`.

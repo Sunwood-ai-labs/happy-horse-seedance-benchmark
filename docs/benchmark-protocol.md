@@ -2,30 +2,30 @@
 
 ## Goal
 
-Happy Horse 1.0、Seedance 2.0、Seedance 2.0 Fast を同じ入力条件で比較し、速度・コスト・生成品質の違いを再現可能な形で残します。
+Compare Happy Horse 1.0, Seedance 2.0, and Seedance 2.0 Fast under the same input conditions, then preserve speed, cost, and output-quality differences in a reproducible format.
 
 ## Run Rules
 
-1. `configs/prompts.json` の全プロンプトを全モデルに投げる。
-2. 同じ duration、aspect ratio、seed、negative prompt、解像度を使える場合は揃える。
-3. モデル側で固定できないパラメータは、run の notes に残す。
-4. 失敗も `status=failed` として記録し、成功例だけを残さない。
-5. 生成物は `artifacts/<run-id>/` に置き、`data/runs/<run-id>.json` から参照する。
+1. Send every prompt in `configs/prompts.json` to every model.
+2. Match duration, aspect ratio, seed, negative prompt, and resolution whenever a platform allows it.
+3. Record any model-side parameters that cannot be fixed in the run `notes`.
+4. Record failures with `status=failed`; do not keep only successful examples.
+5. Store generated media in `artifacts/<run-id>/` and reference it from `data/runs/<run-id>.json`.
 
 ## Human Scoring
 
-各成果物を 1 から 5 で評価します。
+Score each output from 1 to 5.
 
-- 1: 明確に破綻している
-- 2: 使いにくいが意図は一部見える
-- 3: 目的は満たすが気になる破綻がある
-- 4: 実用可能で小さな問題だけがある
-- 5: そのまま使える
+- 1: clearly broken
+- 2: difficult to use, but part of the intent is visible
+- 3: meets the goal with noticeable issues
+- 4: usable with only small issues
+- 5: usable as-is
 
 ## Report
 
 ```sh
-PYTHONPATH=src python3 -m vbench report --run-id <run-id>
+uv run python -m vbench report --run-id <run-id>
 ```
 
-レポートは `reports/<run-id>.md` に生成されます。
+The report is generated at `reports/<run-id>.md`.

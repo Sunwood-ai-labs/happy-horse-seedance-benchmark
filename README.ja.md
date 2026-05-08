@@ -91,7 +91,7 @@ Markdownレポートを再生成します。
 uv run python -m vbench report --run-id smoke-001
 ```
 
-出力先は `reports/<run-id>.md` です。今回の動画受け取り手順は [docs/incoming-video-intake.md](docs/incoming-video-intake.md) にまとめています。
+出力先は `reports/<run-id>.md` です。今回の動画受け取り手順は [docs/ja/incoming-video-intake.md](docs/ja/incoming-video-intake.md) にまとめています。
 
 ## 🎬 HyperFrames比較動画
 
@@ -99,7 +99,7 @@ HyperFrames で、4シーン x 3モデルを1本にまとめた比較動画を�
 
 - Composition: [hf-character-reference-comparison/index.html](hf-character-reference-comparison/index.html)
 - Visual design notes: [hf-character-reference-comparison/DESIGN.md](hf-character-reference-comparison/DESIGN.md)
-- 成果物ポリシー: [docs/hyperframes-comparison.md](docs/hyperframes-comparison.md)
+- 成果物ポリシー: [docs/ja/hyperframes-comparison.md](docs/ja/hyperframes-comparison.md)
 - ローカル最終動画: `hf-character-reference-comparison/renders/all-scenes-comparison.mp4`
 
 MP4はサイズが大きいため、Gitではソース構成と確認フレームを管理し、完成動画本体はローカル成果物またはRelease assetとして扱います。
@@ -140,6 +140,14 @@ MP4はサイズが大きいため、Gitではソース構成と確認フレー�
 - Style accuracy: コンセプト別の様式再現性
 - Latency: 生成完了までの時間
 - Cost: 生成コスト
+
+## 📚 ドキュメント
+
+- [日本語ドキュメント](docs/ja/index.md)
+- [ベンチマークプロトコル](docs/ja/benchmark-protocol.md)
+- [動画受け取り手順](docs/ja/incoming-video-intake.md)
+- [HyperFrames成果物](docs/ja/hyperframes-comparison.md)
+- [English Documentation](docs/index.md)
 
 ## 🗂️ ディレクトリ
 

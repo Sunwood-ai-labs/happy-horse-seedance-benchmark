@@ -1,37 +1,37 @@
 # HyperFrames Comparison Artifacts
 
-このドキュメントは、4シーン x 3モデルの比較動画を作るための HyperFrames 成果物の扱いをまとめます。
+This document defines how to handle HyperFrames artifacts for the 4-scene x 3-model comparison video.
 
 ## Tracked
 
-Gitに残すもの:
+Keep these files in Git:
 
-- `hf-character-reference-comparison/index.html`: 比較動画の構成本体
-- `hf-character-reference-comparison/DESIGN.md`: レイアウトとレビュー反映メモ
-- `hf-character-reference-comparison/assets/background.png`: 背景画像
-- `hf-character-reference-comparison/renders/**/*.jpg`: READMEで参照する確認フレームとコンタクトシート
+- `hf-character-reference-comparison/index.html`: the comparison composition source
+- `hf-character-reference-comparison/DESIGN.md`: layout and review-iteration notes
+- `hf-character-reference-comparison/assets/background.png`: background image
+- `hf-character-reference-comparison/renders/**/*.jpg`: review frames and contact sheets referenced by the README
 
 ## Local Only
 
-Gitから外すもの:
+Keep these files out of Git:
 
-- `hf-character-reference-comparison/assets/videos/**/*.mp4`: 生成元動画
-- `hf-character-reference-comparison/renders/*.mp4`: 完成動画レンダー
+- `hf-character-reference-comparison/assets/videos/**/*.mp4`: generated source videos
+- `hf-character-reference-comparison/renders/*.mp4`: full rendered comparison videos
 
-完成動画はローカルでは次の場所にあります。
+The final render is stored locally at:
 
 ```text
 hf-character-reference-comparison/renders/all-scenes-comparison.mp4
 ```
 
-MP4はサイズが大きいため、GitHubには置かず、必要に応じてRelease assetや外部ストレージに昇格します。
+MP4 files are large, so they should not be committed to GitHub. Promote them to release assets or external storage only when distribution is needed.
 
 ## Render
 
-HyperFrames CLIが使える環境では、次のディレクトリを作業場所にします。
+When the HyperFrames CLI is available, use the composition directory as the working directory:
 
 ```sh
 cd hf-character-reference-comparison
 ```
 
-レンダー済み動画の確認では、まずREADMEの確認フレームを見て、文字はみ出し、タイルずれ、分析メモの重なりを確認します。
+For rendered-video review, start with the README review frames and check for overflowing text, tile misalignment, and overlapping analysis notes.

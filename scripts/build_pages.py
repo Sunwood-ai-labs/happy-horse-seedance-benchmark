@@ -149,6 +149,10 @@ def render_index(prompts: object, models: object) -> str:
       font-weight: 800;
       box-shadow: var(--shadow);
     }}
+    .text-link {{
+      color: var(--teal);
+      font-weight: 900;
+    }}
     section {{
       margin-top: 42px;
       padding: 30px;
@@ -267,6 +271,12 @@ def render_index(prompts: object, models: object) -> str:
     <section>
       <h2>今回の見方</h2>
       <p class="note">今回は、綺麗にまとまるかだけではなく、B級映像でHappy Horse 1.0が出す「実写の説得力」「制御不能な異物感」「破綻込みの作家性」を評価対象にしています。</p>
+    </section>
+
+    <section>
+      <h2>Documentation</h2>
+      <p>English and Japanese docs are maintained in parallel: <a class="text-link" href="https://github.com/Sunwood-ai-labs/happy-horse-seedance-benchmark/blob/main/docs/index.md">English docs</a> / <a class="text-link" href="https://github.com/Sunwood-ai-labs/happy-horse-seedance-benchmark/blob/main/docs/ja/index.md">日本語ドキュメント</a>.</p>
+      <p>Protocol, intake, and HyperFrames artifact policy pages are available for both languages.</p>
     </section>
 
     <section id="proof">
