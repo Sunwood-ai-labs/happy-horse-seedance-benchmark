@@ -28,7 +28,7 @@
 - Generated media remains ignored by Git unless intentionally promoted.
 - CI, smoke test, README link check, static site build, and static site check pass locally.
 - GitHub repository metadata is set.
-- GitHub Pages is not enabled because the repository is private and the Pages create API returns `422` for the current plan.
+- GitHub Pages is enabled for the public repository and the live site returns HTTP 200.
 
 ## Structural QA Checklist
 
@@ -37,5 +37,5 @@
 - Japanese and English README structures are parallel.
 - Verification commands use `uv run` for local Python execution.
 - Static site paths point at files included in `_site`.
-- Pages workflow builds `_site` and skips deploy while the repo is private.
+- Pages workflow builds `_site` and deploys after the repository is public.
 - Staged payload excludes local MP4s, raw artifacts, report outputs, `.venv`, and `_site`.

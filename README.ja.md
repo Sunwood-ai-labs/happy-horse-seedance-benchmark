@@ -21,7 +21,7 @@
 
 今回の見方は、綺麗にまとまるかだけではありません。Happy Horse 1.0 が出す粗い実写感、物理の変さ、B級映像としての味も比較対象に含めます。
 
-Planned Pages preview target: [Happy Horse 1.0 vs Seedance 2.0 Benchmark](https://sunwood-ai-labs.github.io/happy-horse-seedance-benchmark/)。Pages workflow は毎回ビルドと検証を行います。リポジトリが private で、private GitHub Pages を使えないプランではデプロイだけスキップします。
+Pages preview: [Happy Horse 1.0 vs Seedance 2.0 Benchmark](https://sunwood-ai-labs.github.io/happy-horse-seedance-benchmark/)。Pages workflow は `main` への push ごとに静的サイトをビルド、検証、デプロイします。
 
 ## 🧪 比較対象
 

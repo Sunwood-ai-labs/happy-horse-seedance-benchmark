@@ -21,7 +21,7 @@ This repository preserves a fixed comparison protocol for the same female charac
 
 The current benchmark intentionally evaluates more than clean visual quality. Happy Horse 1.0's rough live-action texture, physical oddness, and B-movie charm are treated as part of the comparison surface.
 
-Planned Pages preview target: [Happy Horse 1.0 vs Seedance 2.0 Benchmark](https://sunwood-ai-labs.github.io/happy-horse-seedance-benchmark/). The Pages workflow builds and checks the static site on every push. Deployment is skipped while the repository is private on a plan that does not support private GitHub Pages.
+Pages preview: [Happy Horse 1.0 vs Seedance 2.0 Benchmark](https://sunwood-ai-labs.github.io/happy-horse-seedance-benchmark/). The Pages workflow builds, checks, and deploys the static site on every push to `main`.
 
 ## 🧪 Models
 
