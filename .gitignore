@@ -5,9 +5,19 @@ __pycache__/
 .DS_Store
 .env
 .env.*
+node_modules/
+dist/
+.pytest_cache/
+.ruff_cache/
+
+# Raw/generated benchmark media is intentionally kept local unless promoted.
 artifacts/**
 !artifacts/.gitkeep
 reports/**
 !reports/.gitkeep
 data/runs/**
 !data/runs/.gitkeep
+
+# HyperFrames source is tracked, but source videos and full rendered MP4s are large.
+hf-character-reference-comparison/assets/videos/**
+hf-character-reference-comparison/renders/*.mp4

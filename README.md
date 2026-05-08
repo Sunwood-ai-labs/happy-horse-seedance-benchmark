@@ -4,7 +4,9 @@
 
 このリポジトリは、まず「比較条件を固定して記録する」ことを目的にしています。現在のプロンプトセットは、@image の女性キャラクター参照を軸にした 4コンセプト x 15秒 の比較実験です。各モデルのAPI実行部分は `src/vbench/adapters/` に追加する想定で、現時点では生成結果のメタデータをJSONとして登録し、Markdownレポートに集計できます。
 
-## 比較対象
+English summary: this repository preserves a reproducible character-reference video benchmark for Happy Horse 1.0, Seedance 2.0, and Seedance 2.0 Fast. The current run focuses on B-movie flavored 15-second scenes where Happy Horse 1.0's rough physicality and strange live-action texture are part of the evaluation, not only defects.
+
+## 🧪 比較対象
 
 | ID | 表示名 | 用途 |
 | --- | --- | --- |
@@ -12,7 +14,7 @@
 | `seedance-2.0` | Seedance 2.0 | 品質重視の比較対象 |
 | `seedance-2.0-fast` | Seedance 2.0 Fast | 速度重視の比較対象 |
 
-## セットアップ
+## ⚙️ セットアップ
 
 ```sh
 cd /Users/admin/Prj/happy-horse-seedance-benchmark
@@ -20,7 +22,7 @@ cd /Users/admin/Prj/happy-horse-seedance-benchmark
 
 外部依存を増やさないため、CLI本体は標準ライブラリだけで動きます。ローカルではインストールなしで `PYTHONPATH=src` を付けて実行できます。
 
-## 使い方
+## ▶️ 使い方
 
 プロンプト一覧を確認します。
 
@@ -58,7 +60,90 @@ PYTHONPATH=src python3 -m vbench report --run-id smoke-001
 
 出力先は `reports/smoke-001.md` です。
 
-## 評価軸
+## 🎬 最新の比較動画
+
+HyperFrames で、4シーン x 3モデルを1本にまとめた比較動画を作成しています。
+今回の見方は、綺麗さだけではなく **B級映像で Happy Horse 1.0 が出す味、実写の説得力、破綻込みの作家性** を重視しています。
+
+- 最終動画（ローカル生成物）: `hf-character-reference-comparison/renders/all-scenes-comparison.mp4`
+- HyperFrames composition: [hf-character-reference-comparison/index.html](hf-character-reference-comparison/index.html)
+- Visual design notes: [hf-character-reference-comparison/DESIGN.md](hf-character-reference-comparison/DESIGN.md)
+- 成果物ポリシー: [docs/hyperframes-comparison.md](docs/hyperframes-comparison.md)
+
+MP4はサイズが大きいため、Gitではソース構成と確認フレームを管理し、完成動画本体はローカル成果物またはRelease assetとして扱います。
+
+## 🖼️ 確認フレーム / QC画像
+
+動画内の文字、タイル配置、分析メモ、まとめスライドを確認するために使った代表フレームです。README上でもすぐ確認できるように残しています。
+
+### 確認用フレーム一覧
+
+| 用途 | 時刻 | 画像 |
+| --- | ---: | --- |
+| 冒頭タイトル / ベンチマーク意図 | 3s | [t3.jpg](hf-character-reference-comparison/renders/review-reflection-check/t3.jpg) |
+| VHS / Happy Horse 1.0分析 | 32s | [t32.jpg](hf-character-reference-comparison/renders/review-reflection-check/t32.jpg) |
+| 昭和特撮 / Happy Horse 1.0分析 | 96s | [t96.jpg](hf-character-reference-comparison/renders/review-reflection-check/t96.jpg) |
+| 深夜通販 / Happy Horse 1.0分析 | 160s | [t160.jpg](hf-character-reference-comparison/renders/review-reflection-check/t160.jpg) |
+| 80年代OVA / Happy Horse 1.0分析 | 224s | [t224.jpg](hf-character-reference-comparison/renders/review-reflection-check/t224.jpg) |
+| まとめスライド | 266s | [t266.jpg](hf-character-reference-comparison/renders/review-reflection-check/t266.jpg) |
+| VHS タイル配置の早い時点 | 10.8s | [t10_8.jpg](hf-character-reference-comparison/renders/frame-alignment-check/t10_8.jpg) |
+| VHS タイル配置の安定時点 | 12s | [t12.jpg](hf-character-reference-comparison/renders/frame-alignment-check/t12.jpg) |
+| VHS フル再生の早い時点 | 25.8s | [t25_8.jpg](hf-character-reference-comparison/renders/frame-alignment-check/t25_8.jpg) |
+| VHS フル再生の安定時点 | 27s | [t27.jpg](hf-character-reference-comparison/renders/frame-alignment-check/t27.jpg) |
+| 昭和特撮 タイル配置 | 74.8s | [t74_8.jpg](hf-character-reference-comparison/renders/frame-alignment-check/t74_8.jpg) |
+| 深夜通販 タイル配置 | 138.8s | [t138_8.jpg](hf-character-reference-comparison/renders/frame-alignment-check/t138_8.jpg) |
+| 80年代OVA タイル配置 | 202.8s | [t202_8.jpg](hf-character-reference-comparison/renders/frame-alignment-check/t202_8.jpg) |
+
+### レビュー反映確認
+
+Happy Horse 1.0 のB級映像的な味、各Happy Horse分析メモ、まとめスライドの反映確認。
+
+![レビュー反映確認](hf-character-reference-comparison/renders/review-reflection-check.jpg)
+
+個別フレーム:
+
+- [Intro](hf-character-reference-comparison/renders/review-reflection-check/t3.jpg)
+- [VHS / Happy Horse 1.0](hf-character-reference-comparison/renders/review-reflection-check/t32.jpg)
+- [Showa Tokusatsu / Happy Horse 1.0](hf-character-reference-comparison/renders/review-reflection-check/t96.jpg)
+- [Late-night Shopping / Happy Horse 1.0](hf-character-reference-comparison/renders/review-reflection-check/t160.jpg)
+- [80s OVA / Happy Horse 1.0](hf-character-reference-comparison/renders/review-reflection-check/t224.jpg)
+- [Summary slide](hf-character-reference-comparison/renders/review-reflection-check/t266.jpg)
+
+### タイル配置 / フレーム確認
+
+タイル比較シーンでは、動画まわりの装飾枠を外し、2x2配置の動画と右下コンセプトカードだけにしています。
+
+![フレーム位置確認](hf-character-reference-comparison/renders/frame-alignment-check.jpg)
+
+個別フレーム:
+
+- [VHS tile early](hf-character-reference-comparison/renders/frame-alignment-check/t10_8.jpg)
+- [VHS tile stable](hf-character-reference-comparison/renders/frame-alignment-check/t12.jpg)
+- [VHS full early](hf-character-reference-comparison/renders/frame-alignment-check/t25_8.jpg)
+- [VHS full stable](hf-character-reference-comparison/renders/frame-alignment-check/t27.jpg)
+- [Showa tile](hf-character-reference-comparison/renders/frame-alignment-check/t74_8.jpg)
+- [Shopping tile](hf-character-reference-comparison/renders/frame-alignment-check/t138_8.jpg)
+- [OVA tile](hf-character-reference-comparison/renders/frame-alignment-check/t202_8.jpg)
+
+### 個別分析メモ
+
+各モデルのフル再生パート右側に入れた、生成物への短評確認。
+
+![分析メモQC](hf-character-reference-comparison/renders/full-analysis-contact-sheet.jpg)
+
+### 全体QC
+
+主要シーンを横断したコンタクトシート。
+
+![QCコンタクトシート](hf-character-reference-comparison/renders/qc-contact-sheet.jpg)
+
+### 最終文言確認
+
+冒頭タイトル、Happy Horse 1.0の特撮/OVA分析、まとめスライドなどの文言確認用。
+
+![最終文言確認](hf-character-reference-comparison/renders/final-copy-check.jpg)
+
+## 📏 評価軸
 
 `configs/metrics.json` に定義しています。
 
@@ -74,7 +159,7 @@ PYTHONPATH=src python3 -m vbench report --run-id smoke-001
 - Latency: 生成完了までの時間
 - Cost: 生成コスト
 
-## ディレクトリ
+## 🗂️ ディレクトリ
 
 ```text
 configs/       モデル、プロンプト、評価軸
@@ -85,15 +170,16 @@ src/vbench/    CLIと集計ロジック
 tests/         最低限の検証
 ```
 
-## 次に足すもの
+## 🧭 次に足すもの
 
 - 各サービスの実APIアダプタ
 - 人手評価フォーム
 - 画像・動画の自動メトリクス
 - 複数runの横断ランキング
 
-## 検証
+## ✅ 検証
 
 ```sh
 python3 scripts/smoke_test.py
+python3 scripts/check_readme_links.py
 ```
