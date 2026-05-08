@@ -1,0 +1,44 @@
+[
+  {
+    "id": "prompt_adherence",
+    "display_name": "Prompt adherence",
+    "scale": "1-5",
+    "higher_is_better": true
+  },
+  {
+    "id": "temporal_consistency",
+    "display_name": "Temporal consistency",
+    "scale": "1-5",
+    "higher_is_better": true
+  },
+  {
+    "id": "motion_quality",
+    "display_name": "Motion quality",
+    "scale": "1-5",
+    "higher_is_better": true
+  },
+  {
+    "id": "visual_quality",
+    "display_name": "Visual quality",
+    "scale": "1-5",
+    "higher_is_better": true
+  },
+  {
+    "id": "text_logo_stability",
+    "display_name": "Text/logo stability",
+    "scale": "1-5",
+    "higher_is_better": true
+  },
+  {
+    "id": "latency_sec",
+    "display_name": "Latency",
+    "scale": "seconds",
+    "higher_is_better": false
+  },
+  {
+    "id": "cost_usd",
+    "display_name": "Cost",
+    "scale": "USD",
+    "higher_is_better": false
+  }
+]

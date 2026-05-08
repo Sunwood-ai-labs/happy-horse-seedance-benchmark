@@ -1,0 +1,20 @@
+[
+  {
+    "id": "happy-horse-1.0",
+    "display_name": "Happy Horse 1.0",
+    "track": "baseline",
+    "notes": "User-named comparison target. Add provider/API details when confirmed."
+  },
+  {
+    "id": "seedance-2.0",
+    "display_name": "Seedance 2.0",
+    "track": "quality",
+    "notes": "Quality-oriented comparison target."
+  },
+  {
+    "id": "seedance-2.0-fast",
+    "display_name": "Seedance 2.0 Fast",
+    "track": "fast",
+    "notes": "Speed-oriented comparison target."
+  }
+]

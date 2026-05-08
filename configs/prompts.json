@@ -1,0 +1,37 @@
+[
+  {
+    "id": "product-orbit",
+    "category": "product",
+    "duration_sec": 5,
+    "aspect_ratio": "16:9",
+    "prompt": "A premium electric bicycle on a rotating studio platform, subtle reflections, camera orbit, realistic product lighting, no text."
+  },
+  {
+    "id": "character-action",
+    "category": "character",
+    "duration_sec": 5,
+    "aspect_ratio": "16:9",
+    "prompt": "A stylized explorer runs across a windy desert ridge at sunset, scarf and coat moving naturally, cinematic camera follow."
+  },
+  {
+    "id": "text-stability",
+    "category": "text",
+    "duration_sec": 5,
+    "aspect_ratio": "16:9",
+    "prompt": "A clean storefront sign that reads SUNWOOD CAFE, rainy evening street, slow dolly-in, the text remains sharp and stable."
+  },
+  {
+    "id": "multi-subject",
+    "category": "composition",
+    "duration_sec": 5,
+    "aspect_ratio": "16:9",
+    "prompt": "Three glass marbles roll across a wooden desk and stop in a triangle formation, shallow depth of field, realistic physics."
+  },
+  {
+    "id": "anime-motion",
+    "category": "stylized",
+    "duration_sec": 5,
+    "aspect_ratio": "16:9",
+    "prompt": "Anime-style city rooftop at night, a young inventor opens a glowing mechanical umbrella, wind and rain motion, vibrant lighting."
+  }
+]
