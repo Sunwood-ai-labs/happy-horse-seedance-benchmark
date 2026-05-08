@@ -3,7 +3,7 @@
     "id": "happy-horse-1.0",
     "display_name": "Happy Horse 1.0",
     "track": "baseline",
-    "notes": "User-named comparison target. Add provider/API details when confirmed."
+    "notes": "User-named comparison target. Videos are generated on the relevant platform, then registered in this repository."
   },
   {
     "id": "seedance-2.0",

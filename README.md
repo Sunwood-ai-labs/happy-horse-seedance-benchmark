@@ -9,7 +9,7 @@
 
 ハッピーホース 1.0、シーダンス 2.0、シーダンス 2.0 Fast を同じ条件で比較するためのベンチマーク用リポジトリです。
 
-このリポジトリは、まず「比較条件を固定して記録する」ことを目的にしています。現在のプロンプトセットは、@image の女性キャラクター参照を軸にした 4コンセプト x 15秒 の比較実験です。各モデルのAPI実行部分は `src/vbench/adapters/` に追加する想定で、現時点では生成結果のメタデータをJSONとして登録し、Markdownレポートに集計できます。
+このリポジトリは、まず「比較条件を固定して記録する」ことを目的にしています。現在のプロンプトセットは、@image の女性キャラクター参照を軸にした 4コンセプト x 15秒 の比較実験です。動画生成そのものは各モデル/各プラットフォーム上で行い、このリポジトリでは生成済み動画の受け取り、メタデータ登録、確認フレーム管理、Markdownレポート化、HyperFrames比較動画化を扱います。
 
 English summary: this repository preserves a reproducible character-reference video benchmark for Happy Horse 1.0, Seedance 2.0, and Seedance 2.0 Fast. The current run focuses on B-movie flavored 15-second scenes where Happy Horse 1.0's rough physicality and strange live-action texture are part of the evaluation, not only defects.
 
@@ -183,7 +183,7 @@ tests/         最低限の検証
 
 ## 🧭 次に足すもの
 
-- 各サービスの実APIアダプタ
+- 各プラットフォームで生成した動画の受け取り手順の追加
 - 人手評価フォーム
 - 画像・動画の自動メトリクス
 - 複数runの横断ランキング
